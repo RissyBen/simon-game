@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon - Memory Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1 id="level-title">SIMON</h1>
+    
+    <div class="stats">
+      <div class="score">Level: <span id="current-level">0</span></div>
+      <div class="high-score">Best: <span id="high-score">0</span></div>
+    </div>
+
+    <div class="difficulty-selector">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <div class="btn green" id="green"></div>
+      <div class="btn red" id="red"></div>
+      <div class="btn yellow" id="yellow"></div>
+      <div class="btn blue" id="blue"></div>
+      <div class="center-circle" id="center-display">GO!</div>
+    </div>
+
+    <button class="start-btn" id="start-btn">Start Game</button>
+  </div>
+
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
